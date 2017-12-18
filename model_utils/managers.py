@@ -260,7 +260,7 @@ class InheritanceManagerMixin(object):
 
 
 class InheritanceManager(InheritanceManagerMixin, models.Manager):
-    pass
+    use_in_migrations = True
 
 
 class QueryManagerMixin(object):
